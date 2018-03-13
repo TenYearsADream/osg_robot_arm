@@ -1,0 +1,14 @@
+# pkg-config source file
+
+prefix=H:\development\inst64-vs15\3rdParty\OSG\osg-vs15-x64
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: openscenegraph-osgParticle
+Description: Particle system library for Openscenegraph
+Version: 3.2.3
+Requires: openscenegraph-osgDB openscenegraph-osgUtil openscenegraph-osg openthreads
+Conflicts:
+Libs: -L${libdir} -losgParticle
+Cflags: -I${includedir}

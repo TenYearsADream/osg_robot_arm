@@ -1,0 +1,14 @@
+# pkg-config source file
+
+prefix=H:\development\inst64-vs15\3rdParty\OSG\osg-vs15-x64
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: openthreads
+Description: Object-Oriented (OO) thread interface for C++ programmers
+Version: 3.2.1
+Requires:
+Conflicts:
+Libs: -L${libdir} -lOpenThreads
+Cflags: -I${includedir}
